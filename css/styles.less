@@ -1,66 +1,114 @@
 body {
-	color: #8ea3ad;
-	font-family: Roboto-Regular;
+    color: #8ea3ad;
+    font-family: Roboto-Regular;
     font-size: 14px;
-	background-color: #ffffff;
-	margin: 0;
+    background-color: #ffffff;
+    margin: 0;
 }
+
 #wrapper {
-	max-width: 960px;
-	margin: auto;
+    max-width: 960px;
+    margin: auto;
 }
+
 header {
-	padding: 20px 0;
+    padding: 20px 0;
 }
-.logo{
+
+.logo {
     max-width: 195px;
-    color:#3b5c6c;
-    margin:0px;
+    color: #3b5c6c;
+    margin: 0px;
     padding: 0px;
-    font-size:32px;
+    font-size: 32px;
     cursor: pointer;
-    p:nth-child(1){
-        font-family:Glegoo-Regular;
+    p:nth-child(1) {
+        font-family: Glegoo-Regular;
         display: inline;
     }
-    p:nth-child(2){
-        font-family:Concert One-Regular;
-        display: inline; 
+    p:nth-child(2) {
+        font-family: Concert One-Regular;
+        display: inline;
     }
-    p:nth-child(3){
-        font-family:Tahoma Regular;
-        font-size:14px;
-        color:#90c7a6;
-        text-align-last: justify;
-        -moz-text-align-last: justify;
+    p:nth-child(3) {
+        font: normal 14pt Tahoma Regular;
+        font-size: 14px;
+        color: #90c7a6;
         width: 95%;
         letter-spacing: 0.15em;
         margin-left: 0.3em;
         margin-top: -0.3em;
     }
 }
-@font-face{
+
+.font_rule {
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: Concert One-Regular;
     src: url(font/ConcertOne-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
 }
-@font-face{
+
+@font-face {
     font-family: Open Sans-Bolt;
     src: url(font/OpenSans-Bolt.ttf);
     font-weight: Bolt;
+    .font_rule;
 }
-@font-face{
+
+@font-face {
     font-family: Open Sans-Regular;
     src: url(font/Open_Sans/OpenSans-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
 }
-@font-face{
+
+@font-face {
     font-family: Glegoo-Regular;
     src: url(font/Glegoo-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
 }
-@font-face{
+
+@font-face {
     font-family: Roboto-Regular;
     src: url(font/Roboto-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
+}
+
+form[name="search"] {
+    float: right;
+}
+
+nav {
+    a {
+        text-decoration: none;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style-position: inside;
+        padding: 10px;
+    }
+}
+.top-menu {
+    li{
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 0;
+    }
+    li:active {
+        background-color: red;
+        color: green;
+    }
+    a {
+        color:grey;
+    }
 }
