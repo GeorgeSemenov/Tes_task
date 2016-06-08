@@ -28,39 +28,49 @@ header {
         display: inline; 
     }
     p:nth-child(3){
-        font-family:Tahoma Regular;
+        font: normal 14pt Tahoma Regular;
         font-size:14px;
         color:#90c7a6;
-        text-align-last: justify;
-        -moz-text-align-last: justify;
         width: 95%;
         letter-spacing: 0.15em;
         margin-left: 0.3em;
         margin-top: -0.3em;
     }
 }
+.font_rule{
+        font-weight: normal;
+        font-style: normal;
+}
 @font-face{
     font-family: Concert One-Regular;
     src: url(font/ConcertOne-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
 }
 @font-face{
     font-family: Open Sans-Bolt;
     src: url(font/OpenSans-Bolt.ttf);
     font-weight: Bolt;
+    .font_rule;
 }
 @font-face{
     font-family: Open Sans-Regular;
     src: url(font/Open_Sans/OpenSans-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
 }
 @font-face{
     font-family: Glegoo-Regular;
     src: url(font/Glegoo-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
 }
 @font-face{
     font-family: Roboto-Regular;
     src: url(font/Roboto-Regular.ttf);
     font-weight: Regular;
+    .font_rule;
+}
+form[name="search"]{
+    float: right;
 }
