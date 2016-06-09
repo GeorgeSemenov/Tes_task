@@ -11,20 +11,23 @@
     <!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script src="js/jquery-1.12.0.min.js"></script>
-	<script src="css/js/menu.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="css/js/menu.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <div class="logo">
-                <p>CHERRY</p><!--
-		        --><p>SHOP</p>
+                <p>CHERRY</p>
+                <!--
+		        -->
+                <p>SHOP</p>
                 <p>TOP OF THE FASHION</p>
             </div>
             <form name="search" action="#" method="get">
-                <input type="text" name="q" placeholder="Search"><button type="sumbit">GO!</button>
+                <input type="text" name="q" placeholder="Search">
+                <button type="sumbit">GO!</button>
             </form>
         </header>
         <nav>
@@ -51,10 +54,38 @@
                     <li><a href="/house holds/">HOUSE HOLDS</a></li>
                 </ul>
             </nav>
+            <nav>
+                <h3>REFINE SEARCH</h3>
+                <ul class="dropdown">
+                    <li class="dropdown-top">
+                        <a class="dropdown-top" href="/">Color</a>
+                        <ul class="dropdown-inside">
+                            <li><a href="/">red</a></li>
+                            <li><a href="/">blue</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-top">
+                        <a class="dropdown-top" href="/">Price</a>
+                        <ul class="dropdown-inside">
+                            <li><a href="/">$100-$499</a></li>
+                            <li><a href="/">$500-$999</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown-top">
+                        <a class="dropdown-top" href="/">Weight</a>
+                        <ul class="dropdown-inside">
+                            <li><a href="/">1kg-5kg</a></li>
+                            <li><a href="/">6kg-10kg</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
         <section></section>
     </div>
-    <footer></footer>    
+    <footer></footer>
 </body>
 
 </html>
