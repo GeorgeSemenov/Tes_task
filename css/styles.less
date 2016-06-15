@@ -119,6 +119,9 @@ aside {
 section {
     margin-left: 280px;
     padding-bottom: 50px;
+    > figure +figure {
+        margin-left: 28px;
+    }
 } 
 .aside-menu {
     li {
@@ -177,8 +180,21 @@ figure {
     margin: 0;
     img{
         display: block;
-        max-width: 244px;
+        max-width: 200px;
         max-height: 341px;
+    }
+    figcaption {
+        text-align: center;
+        .discount {
+            text-decoration: line-through;
+        }
+        span+span{
+            color: #2cc62c;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 }
 //Код стилей смотри тут https://jsfiddle.net/61d4jr82/5/
