@@ -5,9 +5,9 @@ body {
     background-color: #ffffff;
     margin: 0;
 }
-
+@page-width: 960px;
 #wrapper {
-    max-width: 960px;
+    max-width: @page-width;
     margin: auto;
 }
 
@@ -16,6 +16,11 @@ header {
 }
 
 .logo {
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
     max-width: 195px;
     color: #3b5c6c;
     margin: 0px;
@@ -150,16 +155,6 @@ li.dropdown-top{
 ul.dropdown-inside {
     padding-left: 5px;
 }
-div.advertising-block {
-    background-color: wheat;
-    width: inherit;
-    height: 300px;
-    font-size: 3em;
-    p {
-        margin: 0;
-        padding-left: 5px;
-    }
-}
 .status-bar {
     border-style: solid;
     border-width: 1px 0px;
@@ -197,4 +192,22 @@ figure {
         }
     }
 }
-//Код стилей смотри тут https://jsfiddle.net/61d4jr82/5/
+footer {
+    background: #7e7e7e;
+    height: 200px;
+}
+#footer{
+    max-width: @page-width;
+    margin: auto;
+    div{
+        float: left;
+        margin-right: 20px;
+    }
+    .underscore {
+        margin-top: -12px;
+        width: 190px;
+        border-style: solid;
+        border-top: 1px;
+        border-color: aqua;
+    }
+}
