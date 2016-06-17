@@ -5,9 +5,9 @@ body {
     background-color: #ffffff;
     margin: 0;
 }
-
+@page-width: 960px;
 #wrapper {
-    max-width: 960px;
+    max-width: @page-width;
     margin: auto;
 }
 
@@ -16,6 +16,11 @@ header {
 }
 
 .logo {
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
     max-width: 195px;
     color: #3b5c6c;
     margin: 0px;
@@ -110,5 +115,99 @@ nav {
     }
     a {
         color:grey;
+    }
+}
+aside {
+    float:left;
+    width:250px;
+} 
+section {
+    margin-left: 280px;
+    padding-bottom: 50px;
+    > figure +figure {
+        margin-left: 28px;
+    }
+} 
+.aside-menu {
+    li {
+        font-weight: 300;
+        list-style-type:square;
+        border-top: 1px solid #e7e7e7;
+    }
+    li:nth-child(1) {
+        border:none;
+    }
+    li:active {
+        color:#29c5e6;
+    }
+    a {
+        color: #8f8f8f;
+    }
+}
+ul.dropdown {
+    ul.dropdown-inside{
+    list-style-type: none;
+    }
+}
+li.dropdown-top{
+    list-style-type: none;
+}
+ul.dropdown-inside {
+    padding-left: 5px;
+}
+.status-bar {
+    border-style: solid;
+    border-width: 1px 0px;
+    padding: 5px;
+    height: 25px;
+    border-color: green;
+    width: 100%;
+    div {
+        border-style: none;
+        width: 24%;
+        float: left;
+        padding-top: 2px;
+        text-align: center;
+    }
+}
+figure {
+    display: inline-block;
+    margin: 0;
+    img{
+        display: block;
+        max-width: 200px;
+        max-height: 341px;
+    }
+    figcaption {
+        text-align: center;
+        .discount {
+            text-decoration: line-through;
+        }
+        span+span{
+            color: #2cc62c;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+footer {
+    background: #7e7e7e;
+    height: 200px;
+}
+#footer{
+    max-width: @page-width;
+    margin: auto;
+    div{
+        float: left;
+        margin-right: 20px;
+    }
+    .underscore {
+        margin-top: -12px;
+        width: 190px;
+        border-style: solid;
+        border-top: 1px;
+        border-color: aqua;
     }
 }
