@@ -10,11 +10,9 @@ body {
     max-width: @page-width;
     margin: auto;
 }
-
 header {
     padding: 20px 0;
 }
-
 .logo {
     -moz-user-select:none;
     -webkit-user-select:none;
@@ -45,51 +43,40 @@ header {
         margin-top: -0.3em;
     }
 }
-
 .font_rule {
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: Concert One-Regular;
     src: url(font/ConcertOne-Regular.ttf);
     font-weight: Regular;
     .font_rule;
 }
-
 @font-face {
     font-family: Open Sans-Bolt;
     src: url(font/OpenSans-Bolt.ttf);
     font-weight: Bolt;
     .font_rule;
 }
-
 @font-face {
     font-family: Open Sans-Regular;
     src: url(font/Open_Sans/OpenSans-Regular.ttf);
     font-weight: Regular;
     .font_rule;
 }
-
 @font-face {
     font-family: Glegoo-Regular;
     src: url(font/Glegoo-Regular.ttf);
     font-weight: Regular;
     .font_rule;
 }
-
 @font-face {
     font-family: Roboto-Regular;
     src: url(font/Roboto-Regular.ttf);
     font-weight: Regular;
     .font_rule;
 }
-
-form[name="search"] {
-    float: right;
-}
-
 nav {
     a {
         text-decoration: none;
@@ -115,6 +102,32 @@ nav {
     }
     a {
         color:grey;
+    }
+}
+.border-set-style {
+    border-color: #e7e7e7;
+    border-width: 2px;
+    border-style: solid;
+}
+form[name="search"] {
+    float: right;
+    i {
+        color: grey;
+    }
+    input[type=text]{
+        height: 35px;
+        background-color: #f5f5f5;
+        padding-left: 10px;
+        width: 260px;
+        .border-set-style;
+    }
+    button[type=submit], button[type=submit]:hover {
+        margin-left:-4px;
+        width: 45px;
+        position: relative;
+        background-color: #ededed;
+        height: 41px;
+        .border-set-style;
     }
 }
 aside {
